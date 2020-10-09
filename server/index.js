@@ -4,7 +4,7 @@ const port = 3000
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 const {auth} = require('./middleware/auth');
-const { User } = require("./model/User");
+const { User } = require("./model/users");
 const config = require('./config/key');
 
 //application/x-www-form-urlencoded
@@ -12,6 +12,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 //application/json
 app.use(bodyParser.json());
+app.use(cookieParser());
 
 //mongoose를 통한 mongodb통신
 const mongoose = require('mongoose')
@@ -81,18 +82,18 @@ app.get('/api/users/auth', auth, (req, res)=>{
     name: req.user.name,
     lastname: req.user.role,
     image: req.user.image
-  })
+  });
 })
 
 app.get('/api/users/logout', auth, (req, res) => {
   User.findOneAndUpdate({ _id: req.user._id},
-    {token:""})
-    , (err, user) =>{
+    {token:""}
+    , (err, user) => {
       if (err) return res.json({success: false, err});
       return res.status(200).send({
         success: true
       })
-    }
+    })
 })
 
 app.listen(port, () => {

@@ -1,4 +1,4 @@
-const User = require("../model/User");
+const {User} = require("../model/users");
 
 let auth = (req, res, next) => {
     //authentification, using token and cookies in local server

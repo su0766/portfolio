@@ -78,7 +78,7 @@ userSchema.statics.findByToken = function(token, cb){
         //find user -> compare client token with db token
         user.findOne({"_id": decoded, "token": token}, function(err, user){
             if(err) return cb(err);
-            cb(null, user)
+            cb(null, user);
         })
     })
 
@@ -88,5 +88,5 @@ userSchema.statics.findByToken = function(token, cb){
 
 }
 
-const User = mongoose.model('User', userSchema)
+const User = mongoose.model('User', userSchema);
 module.exports = { User }
