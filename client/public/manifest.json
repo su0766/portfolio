@@ -1,0 +1,30 @@
+{
+  "short_name": "Portfolio",
+  "name": "Create Portfolio Sample",
+  "icons": [
+    {
+      "src": "image1.png",
+      "type": "image1/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "image2.png",
+      "type": "image2/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "image3.png",
+      "type": "image3/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "image4.png",
+      "type": "image4/png",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
