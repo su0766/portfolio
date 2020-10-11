@@ -15,7 +15,7 @@ const reportSchema = mongoose.Schema({
         maxlength: 50
     },
     score: {
-        type: int,
+        type: Number,
         required : true
     },
     description: {

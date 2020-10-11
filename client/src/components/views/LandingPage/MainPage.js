@@ -1,7 +1,6 @@
 import React, {useRef, useEffect, useState} from 'react'
 import axios from 'axios'
 import SlideSection from './Sections/SlideSection'
-import Footer from '../../commons/Footer/Footer'
 import Header from '../../commons/Header/Header'
 
 function MainPage(props) {
@@ -18,6 +17,7 @@ function MainPage(props) {
 
     return (
         <div>
+            <Header/>
             <div style={{ width: '85%', margin:'1rem auto'}}>
                 <h1>Portfolio</h1>
                 <hr />

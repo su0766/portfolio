@@ -1,32 +1,32 @@
 import React from 'react';
-import './App.css';
 import {
-  BrowserRouter as Router, Switch, Route, Link
+  BrowserRouter as Router, Switch, Route
 } from "react-router-dom";
 
+import Auth from './hoc/auth'
 import MainPage from './components/views/LandingPage/MainPage'
 import LoginPage from './components/views/LoginPage/LoginPage'
 import RegisterPage from './components/views/RegisterPage/Registerpage'
-import Auth from './hoc/auth'
 import DetailPage from './components/views/DetailPage/DetailPage'
 import AboutPage from './components/views/HeaderPage/AboutPage'
-import DashBoard from './components/views/HeaderPage/Dashboard'
-import Header from './components/commons/Header/Header'
+import SkillPage from './components/views/HeaderPage/SkillPage'
+import ContactPage from './components/views/HeaderPage/ContactPage'
 import Footer from './components/commons/Footer/Footer'
+import './App.css'
 
 function App() {
   return (
     <Router>
     <div>
       <hr />
-      <Header/>
       <Switch>
         <Route exact path="/" component={Auth(RegisterPage, false)} />
         <Route exact path="/login" component={Auth(LoginPage, false)} />
         <Route exact path="/main" component={Auth(MainPage, null)}/>
-        <Route exact path="/detail/:reportId" component={Auth(DetailPage, null)}/>
         <Route exact path="/about" component={Auth(AboutPage, null)}/>
-        <Route exact path="/dashboard" component={Auth(DashBoard, null)}/>
+        <Route exact path="/skill" component={Auth(SkillPage, null)}/>
+        <Route exact path="/contact" component={Auth(ContactPage, null)}/>
+        <Route exact path="/detail/:reportId" component={Auth(DetailPage, null)}/>
       </Switch>
       <Footer/>
     </div>
