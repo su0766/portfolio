@@ -109,7 +109,7 @@ app.get('/api/report/barchart', (req, res) => {
 
 
 
-const port = 8080
+const port = 3000
 app.listen(process.env.PORT || port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })
