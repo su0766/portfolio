@@ -110,6 +110,6 @@ app.get('/api/report/barchart', (req, res) => {
 
 
 const port = 8080
-app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
+app.listen(process.env.PORT || port, () => {
+  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
 })
