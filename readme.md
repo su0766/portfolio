@@ -1,6 +1,5 @@
 # Portfolio
 
-# **Portfolio**
 
 ![Portfolio%20587a4012f7ea43cb8f670a2fb6ab27b7/photo1.png](Portfolio%20587a4012f7ea43cb8f670a2fb6ab27b7/photo1.png)
 
