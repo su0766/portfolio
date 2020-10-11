@@ -5,7 +5,6 @@ import './HeaderPage.css'
 
 function DashBoard() {
     const [chartData, setChartData] = useState({});
-    
     const [chartName, setChartName] = useState({});
     const [chartState, setChartState] = useState({})
 

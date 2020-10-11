@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import i1 from '../../../pics/image0.png'
+import image from '../../../pics/image0.png'
 import Header from '../../commons/Header/Header'
 import './HeaderPage.css'
 
@@ -14,7 +14,7 @@ function AboutPage() {
             <div className='about-grid'>
                 <div col={12}>
                     <img
-                        src={i1}
+                        src={image}
                         alt='avatar'
                         className='avatar-img'
                     />
