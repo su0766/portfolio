@@ -1,5 +1,6 @@
 import React, { useState,  useEffect } from 'react'
 import {Line} from 'react-chartjs-2'
+import Header from '../../commons/Header/Header'
 import './HeaderPage.css'
 
 
@@ -38,7 +39,7 @@ function SkillPage() {
 
     return (
         <div style={{width:'100%', margin:'0'}}>
-            <Header/>
+            {/* <Header/> */}
             <div style={{ width: '85%', margin:'1rem auto'}}>
                 <h1>Skills</h1>
                 <hr />

@@ -1,11 +1,12 @@
 import React, { useEffect } from 'react'
 import i1 from '../../../pics/image0.png'
+import Header from '../../commons/Header/Header'
 import './HeaderPage.css'
 
 function AboutPage() {
     return (
         <div style={{width:'100%', margin:'0'}}>
-            <Header/>
+            {/* <Header/> */}
             <div style={{ width: '85%', margin:'1rem auto'}}>
                 <h1>About</h1>
                 <hr />
