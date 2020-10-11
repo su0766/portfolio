@@ -1,7 +1,8 @@
 # Portfolio
 
 
-![Portfolio%20587a4012f7ea43cb8f670a2fb6ab27b7/photo1.png](Portfolio%20587a4012f7ea43cb8f670a2fb6ab27b7/photo1.png)
+![photo1](https://user-images.githubusercontent.com/32950118/95681723-7c5cb480-0c1c-11eb-8b42-373e977cab7a.png)
+
 
 ## **Getting Started**
 
