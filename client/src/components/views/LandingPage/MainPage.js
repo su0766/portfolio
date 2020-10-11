@@ -23,7 +23,7 @@ function MainPage(props) {
                 <hr />
             </div>
             <SlideSection/>
-            <div style={{display: 'flex', justifyContent:'center'}}>
+            <div style={{display: 'flex', justifyContent:'center', marginTop:'15px'}}>
                 <button onClick={onClickHander}>
                     Logout
                 </button>
