@@ -24,6 +24,7 @@ function SlideSection(props) {
         x === -100 * (SlideArray.length - 1) ? setX(0): setX(x - 100)
     }
     const onClickPage=() => {
+        console.log("save")
     }
     
     let imgStyles={
@@ -32,12 +33,11 @@ function SlideSection(props) {
     }
 
     let SlideArray = [
-        <button style={imgStyles}><img src={image1} alt='img' style={imgStyles} /></button>, 
+        <button style={imgStyles}><img src={image1} alt='img' style={imgStyles} onClick={onClickPage}/></button>, 
         <button style={imgStyles}><img src={image2} alt='img' style={imgStyles} onClick={onClickPage}/></button>,
         <button style={imgStyles}><img src={image3} alt='img' style={imgStyles} onClick={onClickPage}/></button>, 
         <button style={imgStyles}><img src={image4} alt='img' style={imgStyles} onClick={onClickPage}/></button>
     ]
-    
 
     return (
         <div className='slider'>
@@ -46,18 +46,18 @@ function SlideSection(props) {
             {SlideArray.map((item, index) => {
                 return (
                     <div key={index} className='slide' 
-                    onClick={onClickPage} style={{transform:`translateX(${x}%)`}}>
+                     style={{transform:`translateX(${x}%)`}}>
                             
-        <Link to="/portfolio_1"></Link>
+                    {/* <Link to="/portfolio_1"></Link> */}
                         {item}
                     </div>
                 )
             })}
             <button id="goLeft" onClick={onClickLeft}>
-                <i class="fas fa-chevron-left"></i>
+                <i className="fas fa-chevron-left"></i>
             </button>
             <button id="goRight" onClick={onClickRight}>
-                <i class="fas fa-chevron-right"></i>
+                <i className="fas fa-chevron-right"></i>
             </button>
 
         </div>

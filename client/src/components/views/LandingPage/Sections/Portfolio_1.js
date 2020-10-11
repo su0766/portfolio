@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
-import image from '../../../pics/image1_1.png'
-import Header from '../../commons/Header/Header'
-import './HeaderPage.css'
+import image from '../../../../pics/image1_1.png'
+import '../../HeaderPage/HeaderPage.css'
 
 function Portfolio_1() {
     return (
@@ -10,7 +9,7 @@ function Portfolio_1() {
             <div style={{ width: '85%', margin:'1rem auto'}}>
                 <h1>OorStory</h1>
                 <hr />
-            </div>
+            </div> 
             <div className='projects-grid'>
                 <div col={12}>
                     <img

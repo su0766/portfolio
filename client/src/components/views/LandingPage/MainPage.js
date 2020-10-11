@@ -17,7 +17,7 @@ function MainPage(props) {
 
     return (
         <div>
-            <Header/>
+            {/* <Header/> */}
             <div style={{ width: '85%', margin:'1rem auto'}}>
                 <h1>Portfolio</h1>
                 <hr />

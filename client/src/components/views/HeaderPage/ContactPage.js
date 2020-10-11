@@ -17,10 +17,10 @@ function ContactPage() {
                     <i className='fa fa-github-square' aria-hidden='true' /></a>
                 {/* {Notion} */}
                 <a href="https://www.notion.so/Soohee-Kim-0948d1dd2b1345308c0e827339a7ce5e" rel='noopener noreferrer' target='_blank'>
-                    <i class="fa fa-address-book-o" aria-hidden="true"></i></a>
+                    <i className="fa fa-address-book-o" aria-hidden="true"></i></a>
                 {/* {Gmail} */}
                 <a href="mailto:su0766@gmail.com" rel='noopener noreferrer' target='_blank'>
-                    <i class="fa fa-google" aria-hidden="true"></i></a>
+                    <i className="fa fa-google" aria-hidden="true"></i></a>
             </div>
         </div>
     )

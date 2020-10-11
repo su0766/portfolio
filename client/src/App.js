@@ -1,7 +1,5 @@
 import React from 'react';
-import {
-  BrowserRouter as Router, Switch, Route
-} from "react-router-dom";
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 
 import Auth from './hoc/auth'
 import MainPage from './components/views/LandingPage/MainPage'
@@ -13,22 +11,16 @@ import ContactPage from './components/views/HeaderPage/ContactPage'
 import DashBoard from './components/views/HeaderPage/Dashboard'
 
 import Footer from './components/commons/Footer/Footer'
+import LoginRouter from './routers/LoginRouter'
+import DefaultRouter from './routers/DefaultRouter'
 import './App.css'
 
 function App() {
   return (
     <Router>
     <div>
-      <hr />
-      <Switch>
-        <Route exact path="/" component={Auth(RegisterPage, false)} />
-        <Route exact path="/login" component={Auth(LoginPage, false)} />
-        <Route exact path="/main" component={Auth(MainPage, null)}/>
-        <Route exact path="/about" component={Auth(AboutPage, null)}/>
-        <Route exact path="/skill" component={Auth(SkillPage, null)}/>
-        <Route exact path="/contact" component={Auth(ContactPage, null)}/>
-        <Route exact path="/dashboard" component={Auth(DashBoard, null)}/>
-      </Switch>
+        <LoginRouter/>
+        <DefaultRouter/>
       <Footer/>
     </div>
   </Router>

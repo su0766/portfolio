@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
-import Footer from '../../commons/Footer/Footer'
 import Header from '../../commons/Header/Header'
 import DetailInfo from './Sections/DetailInfo'
 

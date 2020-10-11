@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
-import image from '../../../pics/image4_1.png'
-import Header from '../../commons/Header/Header'
-import './HeaderPage.css'
+import image from '../../../../pics/image4_1.png'
+import '../../HeaderPage/HeaderPage.css'
 
 function Portfolio_4() {
     return (
